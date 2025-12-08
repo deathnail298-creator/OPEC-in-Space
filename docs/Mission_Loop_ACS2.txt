@@ -1,0 +1,35 @@
+ACS2 – OPEC-in-Space Mission Loop
+
+NODES:
+- MOTHERSHIP      : Depot, processor, mission control
+- SKIMMER         : Single harvester vehicle
+- PHASE_1_PREP    : Pre-departure prep
+- PHASE_2_DEPART  : Departure burn
+- PHASE_3_OUT     : Transit outbound
+- PHASE_4_HARVEST : Active harvest operations
+- PHASE_5_BACK    : Transit return
+- PHASE_6_DOCK    : Docking
+- PHASE_7_OFFLOAD : Offload & refuel
+- PHASE_8_HEALTH  : Health check & relaunch/retire
+
+- ABORT_1_SKIMMER : Skimmer self-abort
+- ABORT_2_FORCE   : Mothership-forced recall
+- ABORT_3_TOTAL   : Total abort (catastrophic mothership fault)
+
+- TIMER_HEARTBEAT : Regular heartbeat / telemetry timer
+- TIMER_DEATH     : 1.5× expected mission duration “death timer”
+
+EDGES:
+- MOTHERSHIP → PHASE_1_PREP → PHASE_2_DEPART → PHASE_3_OUT → PHASE_4_HARVEST
+- PHASE_4_HARVEST → PHASE_5_BACK → PHASE_6_DOCK → PHASE_7_OFFLOAD → PHASE_8_HEALTH
+- PHASE_8_HEALTH → PHASE_1_PREP (if skimmer deemed healthy)
+- PHASE_8_HEALTH → retire skimmer (if not healthy)
+
+ABORT PATHS:
+- ABORT_1_SKIMMER (self-detected critical fault) → SKIMMER attempts best-effort return or safe disposal
+- ABORT_2_FORCE (mothership-detected issue with environment or skimmer telemetry) → immediate recall, shortened mission
+- ABORT_3_TOTAL (catastrophic mothership fault) → mission termination, mothership isolates damage and executes return-to-origin burn without waiting for skimmer
+
+TIMERS:
+- TIMER_HEARTBEAT → regular health pings from skimmer to mothership
+- TIMER_DEATH     → if exceeded without contact, skimmer is declared lost and retired in software; mothership adjusts mission plan accordingly
