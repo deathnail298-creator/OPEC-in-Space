@@ -1,0 +1,45 @@
+ACS2 – Skimmer Topology (OPEC-in-Space)
+
+NODES:
+- INTAKE          : Atmospheric/volatile intake geometry
+- CO2_STORE       : Internal partitioned CO₂/volatile storage
+- FUEL_LOBES      : Skimmer propellant tanks
+- DOCK_PORT       : Mechanical + fluid docking interface to mothership
+- THRUSTER_FWD    : Forward/retro thrusters
+- THRUSTER_ATT    : Attitude thrusters
+- BATT_A          : Battery bank A
+- BATT_B          : Battery bank B
+- BATT_RES        : Protected reserve battery
+- POWER_BUS_PRI   : Primary power bus
+- POWER_BUS_SEC   : Secondary power bus
+- POWER_BUS_SURV  : Survival power bus
+- MODE_CTRL       : Mode control logic (ACTIVE-HARVEST, CRUISE, etc.)
+- ABORT_SENSORS   : Health and environment sensors feeding abort logic
+- AVIONICS_CORE   : GN&C, comms, basic autonomy
+- HOT_SPINE       : Thermal export path if used
+- STRUCTURE       : Main structural body
+
+EDGES:
+- INTAKE     → CO2_STORE
+- CO2_STORE  → DOCK_PORT           (offload path to mothership)
+
+- FUEL_LOBES → THRUSTER_FWD
+- FUEL_LOBES → THRUSTER_ATT
+- FUEL_LOBES ↔ DOCK_PORT           (refuel from mothership)
+
+- BATT_A     → POWER_BUS_PRI
+- BATT_B     → POWER_BUS_PRI
+- BATT_RES   → POWER_BUS_SURV
+
+- POWER_BUS_PRI  → AVIONICS_CORE
+- POWER_BUS_PRI  → THRUSTER_FWD
+- POWER_BUS_PRI  → THRUSTER_ATT
+- POWER_BUS_SEC  → non-critical sensors / payloads
+- POWER_BUS_SURV → ABORT_SENSORS, minimal thermal, minimal comms
+
+- MODE_CTRL      ↔ POWER_BUS_PRI/SEC/SURV   (load shedding, mode changes)
+- MODE_CTRL      ↔ AVIONICS_CORE
+- MODE_CTRL      ↔ ABORT_SENSORS
+
+- HOT_SPINE      → radiative surfaces (if implemented)
+- STRUCTURE      ↔ all mounted subsystems
