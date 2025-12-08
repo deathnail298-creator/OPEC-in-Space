@@ -1,0 +1,128 @@
+---
+
+## 3. `LICENSE.md` (OPEC-style, 3% royalty)
+
+You can replace this later with your canonical Kaizen license text. For now, here’s a self-contained OPEC-specific license that matches your usual pattern:
+
+```markdown
+# OPEC-in-Space License (OISL-1.0)
+
+**IMPORTANT:** This is a custom license. It is *not* MIT, Apache, GPL, or any
+standard open-source license.
+
+By using any part of this repository, you agree to the terms below.
+
+---
+
+## 1. Definitions
+
+- **"Project"** means the contents of this repository and any derivatives of it.
+- **"You"** means any individual or legal entity that uses, copies, modifies,
+  or distributes the Project.
+- **"Commercial Use"** means any use of the Project in a product, service,
+  research program, mission, or offering that directly or indirectly generates
+  revenue, cost savings, funding, grants, contracts, or other financial benefit.
+- **"Net Revenue"** means gross revenue attributable to the Project minus:
+  (a) reasonable direct costs of delivery, (b) taxes, and (c) third-party
+  royalties you are legally obligated to pay.
+
+---
+
+## 2. Non-Commercial Use
+
+You may, **for non-commercial purposes**:
+
+- Use, copy, and modify the Project
+- Create derivative works
+- Share the Project and derivatives
+
+subject to:
+
+1. **Attribution**  
+   You must include a visible notice in any public use, document, or derivative
+   work referring to:
+
+   > "Based on the OPEC-in-Space architecture (OISL-1.0)."
+
+2. **License Inclusion**  
+   You must include this license file (`LICENSE.md`) with any substantial portion
+   of the Project or derivative that you redistribute.
+
+---
+
+## 3. Commercial Use
+
+Commercial Use is permitted, but only under the following conditions:
+
+1. **Attribution (Required)**  
+   You must provide clear attribution in public-facing documents, marketing
+   materials, technical reports, or mission documentation that substantially
+   rely on this Project:
+
+   > "Architecture derived in part from OPEC-in-Space (OISL-1.0)."
+
+2. **Royalty (3% of Net Revenue)**  
+   You agree to pay the original author(s) a royalty equal to:
+
+   > **3% (three percent) of Net Revenue** attributable to products, services,
+   > missions, or offerings that substantially rely on this Project.
+
+   The mechanisms and recipients for royalty payment may be updated in this
+   repository from time to time. It is your responsibility to check for updates
+   before commercial deployment.
+
+3. **Notification (Good-Faith)**  
+   You agree to make a good-faith effort to notify the author(s) of any significant
+   commercial deployment that uses this Project, including:
+   - Nature of the use
+   - Scale (e.g. number of missions, products, customers)
+   - Estimated Net Revenue
+
+   Contact details may be provided in a separate `CONTACT.md` or in the repo
+   metadata.
+
+---
+
+## 4. No Warranty
+
+THE PROJECT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHOR(S) BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
+OUT OF, OR IN CONNECTION WITH THE PROJECT OR THE USE OR OTHER DEALINGS IN THE
+PROJECT.
+
+This includes, without limitation, *any* direct or indirect use in aerospace,
+spaceflight, rocketry, or other high-risk domains.
+
+---
+
+## 5. Liability is Yours
+
+If you build hardware from this, or base missions or operations on it, **you**
+own the risk. This repository is a theoretical design exercise, not a certified
+engineering spec.
+
+---
+
+## 6. Termination
+
+Your rights under this license automatically terminate if you:
+
+- Breach any material term (e.g., fail to provide attribution, fail to pay
+  required royalties, or misrepresent the origin of the architecture), and
+- Do not cure such breach within 30 days after written notice (if such notice
+  is possible).
+
+Upon termination, you must cease Commercial Use of the Project. Non-commercial,
+attributed archival use is permitted.
+
+---
+
+## 7. Governance
+
+This license may be updated for future versions of the Project.  
+Use of older versions remains governed by the license included with those
+versions.
