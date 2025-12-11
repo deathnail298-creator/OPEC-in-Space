@@ -1,5 +1,7 @@
 # OPEC-in-Space# OPEC-in-Space
 
+Possible NASA SBIR:This Phase Zero architecture could be applied to NASA SBIR topics involving passive or low-power resource storage, thermal management, and distributed power routing in space environments, especially for cryogenic or volatile propellant handling.
+
 **OPEC-in-Space** is a theoretical architecture for a simple, low-maintenance
 orbital volatile-harvesting system built around a **mothership + single skimmer**
 loop.
