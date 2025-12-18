@@ -1,0 +1,210 @@
+Phase 1 — Canonical README
+
+OPEC-in-Space (Orbital Propellant Extraction & Capture)
+Scope: Permission to Test. Not permission to deploy. Not permission to operationalize. Phase 1 exists to prove the system deserves to move forward.
+
+Phase Rule
+
+Phase 1 is bounded engineering reality-checking, not optimization and not production.
+If something must work perfectly for the system to make sense, Phase 1 tries to break it.
+If something fails without destroying the concept, Phase 1 documents it, contains it, and keeps going.
+
+What Phase 1 Is
+
+Phase 1 establishes whether OPEC is technically credible enough to justify real hardware program motion.
+
+Phase 1 produces:
+
+proof that the architecture behaves coherently under real constraints
+
+proof that the single-skimmer baseline is justified
+
+proof that abort behavior, failure modes, and mission flow are not fantasy
+
+credible early math, not marketing math
+
+conservative, boring, engineer-grade confidence — or a kill shot
+
+Phase 1 answers:
+
+Does this work at all in a world that isn’t idealized?
+
+Is the concept internally stable, or does it collapse when examined honestly?
+
+Is the single-skimmer demonstrator enough to prove the loop?
+
+If it fails, does it fail cleanly instead of catastrophically?
+
+If Phase 1 cannot answer those cleanly, Phase 1 wins by stopping the project.
+
+Strict Boundaries (Non-Negotiable)
+
+Phase 1 does not:
+
+build flight hardware
+
+build mission operations
+
+promise mass, cost, or timelines
+
+optimize throughput
+
+design a fleet
+
+chase commercial scaling
+
+do PR, hype, or “vision decks”
+
+pretend we’re closer to reality than we are
+
+Phase 1 evaluates truth, not desire.
+
+If someone tries to use Phase 1 to sell, justify program spend, or act like this is ready — Phase 1 failed culturally.
+
+Canonical Phase 1 Objectives
+1️⃣ Architectural Integrity Check
+
+full-stack behavior consistency against physics + constraints
+
+validate single-skimmer baseline as the canonical demonstrator
+
+ensure skimmer/mothership roles are coherent and separable
+
+ensure throughput framework matches architectural assumptions
+
+confirm “simple first” doctrine holds
+
+Output:
+
+A stable system description that survives adversarial questioning
+
+OR explanation of collapse
+
+2️⃣ Failure and Abort Reality
+
+confirm ABORT-1 / ABORT-2 / ABORT-3 logic is sane, bounded, and survivable
+
+no hand-wave failure modes
+
+integrity of TOTAL-ABORT doctrine
+
+ensure failure behavior protects human program not just vehicle hardware
+
+Output:
+
+documented failure tree that isn’t copedium
+
+clarity on whether failure is survivable and useful — or unacceptable
+
+3️⃣ Thermal & Storage Credibility
+
+validate the “four-zone” thermal control concept
+
+passive architecture sanity check
+
+storage behavior credibility
+
+eclipse / idle / dock / active mode reasoning holds
+
+Output:
+
+A Phase-1-credible thermal narrative
+
+Clear statement of confidence limits
+
+4️⃣ Throughput Framework Reality
+
+test the already-defined Step-10 throughput math against conservative inputs
+
+ensure it doesn’t secretly rely on “hope multipliers”
+
+demonstrate why single-skimmer baseline is enough to validate the loop
+
+Output:
+
+throughput math with defensible humility
+
+clarity on what is demonstrated and what is not
+
+5️⃣ “Can This Be Built by Real People?” Reality Pass
+
+evaluate whether this is something normal space engineers can actually build
+
+test whether the architecture is made of practical bricks rather than sci-fi
+
+make sure “complexity creep” isn’t fatal
+
+Output:
+
+a yes/no answer with reasons
+
+Phase 1 Success Criteria
+
+Phase 1 is a success if:
+
+the architecture holds under adversarial scrutiny
+
+the failure system proves survivable and sane
+
+single-skimmer demonstrator remains justified
+
+thermal + throughput models remain credible, conservative, and boring
+
+no show-stopping conceptual flaw appears
+
+Phase 1 outstanding success if:
+
+the concept gets more boring and more inevitable as it matures
+
+Phase 1 Kill Criteria
+
+Phase 1 must kill the project if:
+
+the architecture only works if perfect conditions exist
+
+abort and failure behavior require magic, miracle luck, or hand-waving
+
+throughput collapses into fantasy or relies on wish math
+
+thermal narrative cracks and cannot be salvaged without moving to Phase 3+ complexity
+
+the single-skimmer demonstrator is no longer enough to prove the loop
+
+the system drifts toward “giant fragile science project”
+
+Phase 1 does not “soft fail.”
+If it must die, it dies cleanly and honestly here.
+
+Drift Prevention
+
+To prevent bullshit creep:
+
+If someone says “we’ll figure that out later”, Phase 1 treats it as a failure until proven otherwise.
+
+If someone tries to scale before proving “one works,” Phase 1 rejects that path.
+
+If someone tries to soften kill criteria, Phase 1 treats that as proof they don’t trust the system.
+
+Phase 1 Deliverables
+
+By the end of Phase 1, there must be:
+
+A stable architectural document
+
+Failure tree + abort doctrine confirmation
+
+Thermal system credibility statement
+
+Throughput credibility statement
+
+Explicit “GO / NO-GO to Phase 2” determination
+
+No marketing deck. No investor language. No politics.
+
+Just whether it deserves to live.
+
+Final Statement
+
+Phase 1 exists to protect engineers, protect future budgets, and protect credibility.
+If OPEC deserves to move forward, Phase 1 will make that obvious.
+If it doesn’t, Phase 1 prevents everyone from wasting years pretending.
